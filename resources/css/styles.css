@@ -329,3 +329,27 @@ main .course-gallery .img-box .details p {
 main .course-gallery .mobile {
     display: none;
 } 
+@media only screen and (max-width: 660px) {
+    main .course-gallery .desktop {
+        display: none; 
+    }
+    main .course-gallery .mobile {
+        display: block;
+        width: 100%; 
+    }
+    main .start-learning {
+        background-color: white;
+        padding: 2rem 1rem;
+    }    
+    main .course-gallery .mobile h3 {
+        width: 100%;
+        margin: 0.5rem 0;
+        padding: 1rem;
+        background-color: lightgrey;
+        text-align: left
+    }
+    main .course-gallery {
+        width: 100%;
+        margin: 0;    
+    }
+}
