@@ -5,10 +5,14 @@ html {
     font-size: 16px;
     font-family: Verdana, sans-serif;
     width: 100%;
+    background-color: white;
 }
 a {
     color: blac k;
     text-decoration: none;
+}
+h1, h2, h3, h4, h5, h6, p {
+    line-height: 1.5;
 }
 header {
     position: fixed;
@@ -16,9 +20,10 @@ header {
     left: 0;
     right: 0;
     height: 4rem;
-    margin: 0 1.5rem;
+    padding: 0 1.5rem;
     background-color: white;
-    color: black
+    color: black;
+    z-index: 10;
 }
 header .desktop {
     width: 100%;
@@ -38,11 +43,11 @@ header .desktop {
     height: 2rem;
     width: auto;
 }
-.desktop .header-logo h2 {
+.desktop .header-logo h4 {
     font-size: 2rem;
     font-weight: bold;
 }
-.desktop .header-logo h2 span {
+.desktop .header-logo h4 span {
     font-weight: normal;
     color: grey
 }
@@ -86,4 +91,75 @@ header .mobile {
         justify-content: space-between;
         align-items: center
     }
+}
+body {
+    position: relative;
+    top: 4rem;
+    margin: 0;
+}
+body .banner {
+    background: lightgray;
+    color: black;
+    padding: 2rem 0;
+    width: 100%;
+    display: inline-flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+body .banner img {
+    width: 60%;
+    height: auto;
+    margin: 0 1.5rem;
+}
+body .banner .start-here {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+}
+body .banner .start-here h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 1rem 0;
+}
+body .banner .start-here h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 1rem 0;
+}
+body .banner .start-here .button {
+    width: 100%;
+    padding: 0.5rem 0;
+    margin: 1rem 0;
+    background-color: black;
+}
+
+body .banner .start-here h4 {
+    width: 100%;
+    color: white;
+    font-size: 1rem;
+    text-align: center;
+    margin: 0 auto;
+}
+@media only screen and (max-width: 798px) {
+    body .banner {
+        padding: 0;
+        flex-flow: column;
+        justify-content: center;
+    }
+    body .banner img {
+        margin: 0;
+        width: 100%;
+    }
+    body .banner .start-here {
+        padding: 2rem 1rem;
+    }
+    body .banner .start-here h1 {
+        margin: 2rem;
+    }
+    body .banner .start-here h2 {
+        margin: 1.5rem;
+    }
+    body .banner .start-here .button {
+        margin: 0;
+        background-color: grey;
 }
