@@ -279,7 +279,7 @@ main .start-learning {
     padding: 2rem 4.5rem;
 }
 main .start-learning h1 {
-    margin: 2rem auto;
+    margin: 0 auto 2rem auto;
     text-align: center;
 }
 main .course-gallery {
@@ -351,5 +351,90 @@ main .course-gallery .mobile {
     main .course-gallery {
         width: 100%;
         margin: 0;    
+    }
+}
+.thesis {
+    width: 100%;
+    padding: 2rem 1.5rem;
+    display: block;
+
+}
+.thesis h1 {
+    text-align: center;
+    width: 100%;
+    margin: 0 0 2rem 0;
+}
+.thesis .thes-flex {
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: flex-start; 
+}
+.thesis .thes-flex .vid-box {
+    width: 60%;
+    margin: 0;
+}
+.thesis .thes-flex .vid-box video {
+    padding: 0 0.75rem 1.5rem 0;
+    width: 100%;
+    height: auto;
+}
+.thesis .thes-flex .vid-box h3 {
+    margin: 0.5rem 0.75rem 0.5rem 0rem;
+    width: 100%;
+}
+.thesis .thes-flex .infoboxes {
+    width: 40%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    margin-left: 0.75rem;
+    margin-right: 0.5rem;
+}
+.thesis .thes-flex .infoboxes .infobox {
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 1rem;
+}
+.thesis .thes-flex .infoboxes .infobox .img-box {
+    min-width: 35%;
+    max-width: 35%;
+}
+.thesis .thes-flex .infoboxes .infobox .img-box img {
+    width: 100%;
+    height: auto;
+}
+.thesis .thes-flex .infoboxes .infobox .details {
+    width: 65%;
+    text-align: left;
+    margin-left: 1rem;
+}
+.thesis .thes-flex .infoboxes .infobox .details h3,
+.thesis .thes-flex .infoboxes .infobox .details p {
+    line-height: 1;
+}
+.thesis .thes-flex .infoboxes .infobox .details h3 {
+    font-weight: bold;
+}
+@media only screen and (max-width: 870px) {
+    .thesis .thes-flex .desktop {
+        display: none;
+    }
+    .thesis, 
+    .thesis .thes-flex,
+    .thesis .thes-flex .vid-box,
+    .thesis .thes-flex .vid-box video { 
+        padding-left: 0;
+        padding-right: 0;
+        margin-left: 0;
+        margin-right: 0;
+        width: 100%;.thes-flex
+    }
+    .thesis h1 {
+        margin-bottom: 1rem;
     }
 }
