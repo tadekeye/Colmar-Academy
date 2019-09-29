@@ -126,11 +126,11 @@ main .banner .start-here {
 }
 main .banner .start-here h1 {
     font-weight: bold;
-    margin: 1rem 0;
+    margin-bottom: 1rem;
 }
 main .banner .start-here h3 {
     font-weight: bold;
-    margin: 1rem 0;
+    margin-bottom: 1rem;
 }
 main .banner .start-here .button {
     width: 100%;
@@ -160,17 +160,17 @@ main .banner .start-here h4 {
         padding: 2rem 1rem;
     }
     main .banner .start-here h1 {
-        margin: 2rem;
+        margin-bottom: 2rem;
     }
     main .banner .start-here h2 {
-        margin: 1.5rem;
+        margin-bottom: 1.5rem;
     }
     main .banner .start-here .button {
         margin: 0;
         background-color: grey;
     }
 }
-main .practicing-desktop { 
+main .practicing { 
     width: 100%;
     background-color: white;
     padding: 0;
@@ -178,7 +178,7 @@ main .practicing-desktop {
     flex-flow: row nowrap;
     justify-content: flex-start;
 }
-main .practicing-desktop .picture-caption { 
+main .practicing .picture-caption { 
     width: 60%;
     padding: 2rem 1.5rem;
     display: flex;
@@ -186,60 +186,91 @@ main .practicing-desktop .picture-caption {
     justify-content: start;
     align-items: flex-start;
 }
-main .practicing-desktop .picture-caption img { 
+main .practicing .picture-caption img { 
     width: 100%;
     height: auto;
     margin-bottom: 2rem;
 }
-main .practicing-desktop .picture-caption h1 {
+main .practicing .picture-caption h1 {
     margin-bottom: 1.5rem;
 }
-main .practicing-desktop .picture-caption p {
+main .practicing .picture-caption p {
     margin-bottom: 2rem;
 }
-main .practicing-desktop .picture-caption a p { 
+main .practicing .picture-caption a p { 
     font-size: 0.75rem;
     font-weight: lighter;
 }
-main .practicing-desktop .infoboxes {
+main .practicing .infoboxes {
     width: 40%;
     margin-top: 1.5rem;
     margin-bottom: 2rem;
     display: flex;
     flex-flow: column nowrap;
-    justify-content: start;
+    justify-content: space-between;
 }
-main .practicing-desktop .infoboxes .infobox {
+main .practicing .infoboxes .infobox {
     margin: 0;
     width: 100%;
     display: flex;
     flex-flow: row nowrap;
     justify-content: flex-start;
-    align-content: center;
+    align-items: center;
 }
-main .practicing-desktop .infoboxes .infobox .img-box {
+main .practicing .infoboxes .infobox .img-box {
     margin: 0.5rem;
     width: 35%;
     min-width: 35%;
 }
-main .practicing-desktop .infoboxes .infobox .img-box img {
+main .practicing .infoboxes .infobox .img-box img {
     width: 100%;
     height: auto;
 }
-main .practicing-desktop .infoboxes .infobox .details {
+main .practicing .infoboxes .infobox .img-box img.mobile{
+    display: none;
+}
+main .practicing .infoboxes .infobox .details {
     padding: 1rem;
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
+    overflow: hidden;
 }
-main .practicing-desktop .infoboxes .infobox .details h3 {
+main .practicing .infoboxes .infobox .details h3 {
     font-weight: bold;
     margin-bottom: 0.5rem;
 }
-main .practicing-desktop .infoboxes .infobox .details p {
+main .practicing .infoboxes .infobox .details p {
     margin-bottom: 0.5rem;
 }
-main .practicing-desktop .infoboxes .infobox .details a p {
+main .practicing .infoboxes .infobox .details a p {
     margin-bottom: 0rem;
     color: blue;
+}
+@media only screen and (max-width: 798px) {
+    main .practicing .picture-caption {
+        display: none;
+    }
+    main .practicing .infoboxes .infobox .img-box img.desktop{
+        display: none;
+    }
+    main .practicing .infoboxes {
+        margin-top: 1rem;
+        width: 100%;
+    }
+    main .practicing .infoboxes .infobox {
+        margin-bottom: 1rem;
+        width: 100%;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    main .practicing .infoboxes .infobox .img-box {
+        width: 100%;
+        padding: 0 0.5rem;
+    }
+    main .practicing .infoboxes .infobox .img-box img.mobile{
+        display: flex;
+    }
 }
