@@ -76,7 +76,7 @@ header .mobile {
     display: none;
 }
 
-@media only screen and (max-width: 798px) {
+@media only screen and (max-width: 870px) {
     header .desktop {
         display: none;
     }
@@ -146,7 +146,7 @@ main .banner .start-here h4 {
     text-align: center;
     margin: 0 auto;
 }
-@media only screen and (max-width: 798px) {
+@media only screen and (max-width: 870px) {
     main .banner {
         padding: 0;
         flex-flow: column;
@@ -247,7 +247,7 @@ main .practicing .infoboxes .infobox .details a p {
     margin-bottom: 0rem;
     color: blue;
 }
-@media only screen and (max-width: 798px) {
+@media only screen and (max-width: 870px) {
     main .practicing .picture-caption {
         display: none;
     }
@@ -274,3 +274,58 @@ main .practicing .infoboxes .infobox .details a p {
         display: flex;
     }
 }
+main .start-learning {
+    background-color: lightgray;
+    padding: 2rem 4.5rem;
+}
+main .start-learning h1 {
+    margin: 2rem auto;
+    text-align: center;
+}
+main .course-gallery {
+    width: 100%;
+    margin: 2rem 0;    
+}
+main .course-gallery .desktop {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-content: space-between;
+}
+main .course-gallery .img-box {
+    min-width: 32%;
+    max-width: 32%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex: 0 0;
+    margin: 0 0.5rem 0.5rem 0 
+}
+main .course-gallery .img-box.right {
+    margin-right: 0;  
+}
+main .course-gallery .img-box.bottom {
+    margin-bottom: 0;  
+}
+main .course-gallery .img-box img {
+    width: 100%;
+    height: auto;
+}
+main .course-gallery .img-box .details {
+    width: 100%;
+    padding: 1rem 1.5rem 1.5rem 1rem;
+    text-align: left;
+    background-color: white;
+    flex: 1;
+}
+main .course-gallery .img-box .details h3 {
+    margin: 0.5rem 0;
+}
+main .course-gallery .img-box .details p {
+    margin: 0.5rem 0;
+}
+main .course-gallery .mobile {
+    display: none;
+} 
