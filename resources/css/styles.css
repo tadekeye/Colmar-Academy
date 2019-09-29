@@ -8,11 +8,17 @@ html {
     background-color: white;
 }
 a {
-    color: blac k;
+    color: black;
     text-decoration: none;
 }
 h1, h2, h3, h4, h5, h6, p {
     line-height: 1.5;
+}
+h1 {
+    font-size: 2rem;
+}
+h3 { 
+    font-size: 1.5rem;
 }
 header {
     position: fixed;
@@ -38,6 +44,7 @@ header .desktop {
     flex-flow: row nowrap;
     height: 2rem;
     justify-content: flex-start;
+    align-items: center;
 }
 .desktop .header-logo img {
     height: 2rem;
@@ -92,12 +99,13 @@ header .mobile {
         align-items: center
     }
 }
-body {
+main {
     position: relative;
     top: 4rem;
     margin: 0;
+    width: 100%;
 }
-body .banner {
+main .banner {
     background: lightgray;
     color: black;
     padding: 2rem 0;
@@ -106,34 +114,32 @@ body .banner {
     flex-flow: row nowrap;
     align-items: center;
 }
-body .banner img {
+main .banner img {
     width: 60%;
     height: auto;
     margin: 0 1.5rem;
 }
-body .banner .start-here {
+main .banner .start-here {
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-between;
 }
-body .banner .start-here h1 {
-    font-size: 2rem;
+main .banner .start-here h1 {
     font-weight: bold;
     margin: 1rem 0;
 }
-body .banner .start-here h3 {
-    font-size: 1.5rem;
+main .banner .start-here h3 {
     font-weight: bold;
     margin: 1rem 0;
 }
-body .banner .start-here .button {
+main .banner .start-here .button {
     width: 100%;
     padding: 0.5rem 0;
     margin: 1rem 0;
     background-color: black;
 }
 
-body .banner .start-here h4 {
+main .banner .start-here h4 {
     width: 100%;
     color: white;
     font-size: 1rem;
@@ -141,25 +147,99 @@ body .banner .start-here h4 {
     margin: 0 auto;
 }
 @media only screen and (max-width: 798px) {
-    body .banner {
+    main .banner {
         padding: 0;
         flex-flow: column;
         justify-content: center;
     }
-    body .banner img {
+    main .banner img {
         margin: 0;
         width: 100%;
     }
-    body .banner .start-here {
+    main .banner .start-here {
         padding: 2rem 1rem;
     }
-    body .banner .start-here h1 {
+    main .banner .start-here h1 {
         margin: 2rem;
     }
-    body .banner .start-here h2 {
+    main .banner .start-here h2 {
         margin: 1.5rem;
     }
-    body .banner .start-here .button {
+    main .banner .start-here .button {
         margin: 0;
         background-color: grey;
+    }
+}
+main .practicing-desktop { 
+    width: 100%;
+    background-color: white;
+    padding: 0;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+}
+main .practicing-desktop .picture-caption { 
+    width: 60%;
+    padding: 2rem 1.5rem;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: start;
+    align-items: flex-start;
+}
+main .practicing-desktop .picture-caption img { 
+    width: 100%;
+    height: auto;
+    margin-bottom: 2rem;
+}
+main .practicing-desktop .picture-caption h1 {
+    margin-bottom: 1.5rem;
+}
+main .practicing-desktop .picture-caption p {
+    margin-bottom: 2rem;
+}
+main .practicing-desktop .picture-caption a p { 
+    font-size: 0.75rem;
+    font-weight: lighter;
+}
+main .practicing-desktop .infoboxes {
+    width: 40%;
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: start;
+}
+main .practicing-desktop .infoboxes .infobox {
+    margin: 0;
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-content: center;
+}
+main .practicing-desktop .infoboxes .infobox .img-box {
+    margin: 0.5rem;
+    width: 35%;
+    min-width: 35%;
+}
+main .practicing-desktop .infoboxes .infobox .img-box img {
+    width: 100%;
+    height: auto;
+}
+main .practicing-desktop .infoboxes .infobox .details {
+    padding: 1rem;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+}
+main .practicing-desktop .infoboxes .infobox .details h3 {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+main .practicing-desktop .infoboxes .infobox .details p {
+    margin-bottom: 0.5rem;
+}
+main .practicing-desktop .infoboxes .infobox .details a p {
+    margin-bottom: 0rem;
+    color: blue;
 }
